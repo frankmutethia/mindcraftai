@@ -20,10 +20,10 @@ const AboutSection = () => {
           {/* Content */}
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-              Why Choose <span className="text-gradient">NexusAI</span>?
+              Why Choose <span className="text-gradient">MindCraft AI</span>?
             </h2>
             <p className="text-lg text-muted-foreground font-body mb-8 leading-relaxed">
-              We're not just another online course. NexusAI is a transformative learning experience designed to make AI accessible, practical, and empowering for everyone—regardless of technical background.
+              We're not just another online course. MindCraft AI is a transformative learning experience designed to make AI accessible, practical, and empowering for everyone—regardless of technical background.
             </p>
             <p className="text-muted-foreground font-body mb-8 leading-relaxed">
               Our mission is to democratize AI education and prepare individuals and organizations for the AI-driven future. We believe that understanding AI isn't optional anymore—it's essential.

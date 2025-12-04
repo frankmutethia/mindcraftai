@@ -46,7 +46,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground font-body">Email us</div>
-                  <div className="text-foreground font-body font-medium">hello@nexusai.edu</div>
+                  <div className="text-foreground font-body font-medium">hello@mindcraftai.com</div>
                 </div>
               </div>
 

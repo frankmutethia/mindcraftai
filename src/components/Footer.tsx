@@ -5,8 +5,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div>
-            <a href="#" className="text-xl font-heading font-bold text-foreground mb-4 inline-block">
-              Nexus<span className="text-primary">AI</span>
+            <a href="#" className="flex items-center gap-2 mb-4">
+              <div className="w-7 h-7 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                <div className="w-3 h-3 bg-white/90 rounded-full" style={{ clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }} />
+              </div>
+              <span className="text-xl font-heading font-bold text-foreground">
+                MindCraft AI
+              </span>
             </a>
             <p className="text-muted-foreground font-body text-sm leading-relaxed">
               Empowering the next generation of AI-fluent individuals and organizations.
@@ -50,7 +55,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground font-body text-sm">
-            © 2024 NexusAI. All rights reserved.
+            © 2024 MindCraft AI. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-muted-foreground hover:text-primary font-body text-sm transition-colors">Terms</a>
