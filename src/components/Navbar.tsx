@@ -24,7 +24,7 @@ const Navbar = () => {
                 <path d="M12 2C12 2 5 10 5 15C5 18.866 8.134 22 12 22C15.866 22 19 18.866 19 15C19 10 12 2 12 2Z" />
               </svg>
             </div>
-            <span className="text-xl lg:text-2xl font-hero font-semibold text-white tracking-tight">
+            <span className="text-xl lg:text-2xl font-semibold text-white tracking-tight">
               MindCraft AI
             </span>
           </a>
@@ -35,7 +35,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-white/70 hover:text-white transition-colors duration-300 font-body text-sm"
+                className="text-white/70 hover:text-white transition-colors duration-300 text-sm"
               >
                 {link.name}
               </a>
@@ -66,7 +66,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-white/70 hover:text-white transition-colors duration-300 font-body py-2"
+                  className="text-white/70 hover:text-white transition-colors duration-300 py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}

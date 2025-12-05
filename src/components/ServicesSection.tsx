@@ -39,10 +39,10 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             What You'll <span className="text-gradient">Learn</span>
           </h2>
-          <p className="text-lg text-muted-foreground font-body">
+          <p className="text-lg text-muted-foreground">
             Our comprehensive curriculum covers all essential AI domains, tailored to your skill level and goals.
           </p>
         </div>
@@ -57,8 +57,8 @@ const ServicesSection = () => {
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300">
                 <service.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-lg font-heading font-semibold text-foreground mb-2">{service.title}</h3>
-              <p className="text-muted-foreground font-body text-sm leading-relaxed">{service.description}</p>
+              <h3 className="text-lg font-semibold text-foreground mb-2">{service.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

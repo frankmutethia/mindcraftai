@@ -16,14 +16,14 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main headline - pure white for contrast */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-hero font-bold text-white leading-tight mb-6 animate-fade-up drop-shadow-lg" style={{ animationDelay: '0.1s' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 animate-fade-up drop-shadow-lg" style={{ animationDelay: '0.1s' }}>
             Shaping the Future with
             <br />
             AI-Driven Intelligence
           </h1>
 
           {/* Subheadline - slightly muted white */}
-          <p className="text-base md:text-lg text-white/80 font-body max-w-2xl mx-auto mb-10 animate-fade-up drop-shadow-md" style={{ animationDelay: '0.2s' }}>
+          <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-10 animate-fade-up drop-shadow-md" style={{ animationDelay: '0.2s' }}>
             We help businesses harness artificial intelligence to unlock growth, efficiency, and innovation.
           </p>
 

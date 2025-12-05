@@ -14,9 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['Playfair Display', 'serif'],
-        body: ['DM Sans', 'sans-serif'],
-        hero: ['Montserrat', 'sans-serif'],
+        primary: ['Montserrat', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -53,7 +51,7 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         glow: {
-          amber: "hsl(var(--glow-amber))",
+          blue: "hsl(var(--glow-blue))",
           orange: "hsl(var(--glow-orange))",
         },
         sidebar: {

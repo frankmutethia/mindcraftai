@@ -37,10 +37,10 @@ const ProgramsSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Programs for <span className="text-gradient">Every Learner</span>
           </h2>
-          <p className="text-lg text-muted-foreground font-body">
+          <p className="text-lg text-muted-foreground">
             Whether you're a teenager exploring AI possibilities, a professional enhancing your skills, or an executive driving transformation—we have the perfect program for you.
           </p>
         </div>
@@ -62,14 +62,14 @@ const ProgramsSection = () => {
               </div>
 
               {/* Content */}
-              <div className="text-sm text-primary font-body font-medium mb-2">{program.age}</div>
-              <h3 className="text-2xl font-heading font-bold text-foreground mb-4">{program.title}</h3>
-              <p className="text-muted-foreground font-body mb-6 leading-relaxed">{program.description}</p>
+              <div className="text-sm text-primary font-medium mb-2">{program.age}</div>
+              <h3 className="text-2xl font-bold text-foreground mb-4">{program.title}</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">{program.description}</p>
 
               {/* Features */}
               <ul className="space-y-3 mb-8">
                 {program.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3 text-sm text-foreground/80 font-body">
+                  <li key={feature} className="flex items-center gap-3 text-sm text-foreground/80">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                     {feature}
                   </li>
