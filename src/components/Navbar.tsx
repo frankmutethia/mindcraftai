@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
   { name: "Services", href: "#services" },
@@ -24,7 +25,7 @@ const Navbar = () => {
                 <path d="M12 2C12 2 5 10 5 15C5 18.866 8.134 22 12 22C15.866 22 19 18.866 19 15C19 10 12 2 12 2Z" />
               </svg>
             </div>
-            <span className="text-xl lg:text-2xl font-semibold text-white tracking-tight">
+            <span className="text-xl lg:text-2xl font-semibold text-foreground tracking-tight">
               MindCraft AI
             </span>
           </a>
@@ -35,27 +36,31 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-white/70 hover:text-white transition-colors duration-300 text-sm"
+                className="text-foreground/70 hover:text-foreground transition-colors duration-300 text-sm"
               >
                 {link.name}
               </a>
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
+          {/* CTA Button & Theme Toggle */}
+          <div className="hidden lg:flex items-center gap-2">
+            <ThemeToggle />
             <Button className="bg-blue-600 hover:bg-blue-700 text-white border-0" size="default">
               Get Started
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2 text-white"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="lg:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              className="p-2 text-foreground"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -66,7 +71,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-white/70 hover:text-white transition-colors duration-300 py-2"
+                  className="text-foreground/70 hover:text-foreground transition-colors duration-300 py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
