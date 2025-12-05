@@ -34,10 +34,10 @@ const ResourcesSection = () => {
       <div className="container mx-auto px-6">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Learning <span className="text-gradient">Resources</span>
           </h2>
-          <p className="text-lg text-muted-foreground font-body">
+          <p className="text-lg text-muted-foreground">
             Access a wealth of materials to support your AI learning journey—available 24/7.
           </p>
         </div>
@@ -52,9 +52,9 @@ const ResourcesSection = () => {
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <resource.icon className="w-8 h-8 text-primary" />
               </div>
-              <div className="text-xs text-primary font-body font-medium mb-2">{resource.count}</div>
-              <h3 className="text-lg font-heading font-semibold text-foreground mb-3">{resource.title}</h3>
-              <p className="text-muted-foreground font-body text-sm leading-relaxed">{resource.description}</p>
+              <div className="text-xs text-primary font-medium mb-2">{resource.count}</div>
+              <h3 className="text-lg font-semibold text-foreground mb-3">{resource.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{resource.description}</p>
             </div>
           ))}
         </div>

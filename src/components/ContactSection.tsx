@@ -31,10 +31,10 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact info */}
           <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Let's Start Your <span className="text-gradient">AI Journey</span>
             </h2>
-            <p className="text-lg text-muted-foreground font-body mb-8 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Ready to transform your understanding of AI? Reach out to discuss which program is right for you, schedule a consultation, or ask any questions.
             </p>
 
@@ -45,8 +45,8 @@ const ContactSection = () => {
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground font-body">Email us</div>
-                  <div className="text-foreground font-body font-medium">hello@mindcraftai.com</div>
+                  <div className="text-sm text-muted-foreground">Email us</div>
+                  <div className="text-foreground font-medium">hello@mindcraftai.com</div>
                 </div>
               </div>
 
@@ -55,8 +55,8 @@ const ContactSection = () => {
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground font-body">Call us</div>
-                  <div className="text-foreground font-body font-medium">+1 (555) 123-4567</div>
+                  <div className="text-sm text-muted-foreground">Call us</div>
+                  <div className="text-foreground font-medium">+1 (555) 123-4567</div>
                 </div>
               </div>
 
@@ -65,8 +65,8 @@ const ContactSection = () => {
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground font-body">Visit us</div>
-                  <div className="text-foreground font-body font-medium">San Francisco, CA & Online</div>
+                  <div className="text-sm text-muted-foreground">Visit us</div>
+                  <div className="text-foreground font-medium">San Francisco, CA & Online</div>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm text-foreground font-body mb-2">Your Name</label>
+                  <label className="block text-sm text-foreground mb-2">Your Name</label>
                   <Input
                     placeholder="John Doe"
                     value={formData.name}
@@ -87,7 +87,7 @@ const ContactSection = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm text-foreground font-body mb-2">Email Address</label>
+                  <label className="block text-sm text-foreground mb-2">Email Address</label>
                   <Input
                     type="email"
                     placeholder="john@example.com"
@@ -100,12 +100,12 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label className="block text-sm text-foreground font-body mb-2">I'm interested in...</label>
+                <label className="block text-sm text-foreground mb-2">I'm interested in...</label>
                 <select
                   value={formData.interest}
                   onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
                   required
-                  className="w-full h-10 px-3 rounded-lg bg-secondary/50 border border-border text-foreground font-body focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-colors"
+                  className="w-full h-10 px-3 rounded-lg bg-secondary/50 border border-border text-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-colors"
                 >
                   <option value="">Select a program</option>
                   <option value="teens">AI for Teens</option>
@@ -116,7 +116,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label className="block text-sm text-foreground font-body mb-2">Your Message</label>
+                <label className="block text-sm text-foreground mb-2">Your Message</label>
                 <Textarea
                   placeholder="Tell us about your goals and any questions you have..."
                   value={formData.message}
