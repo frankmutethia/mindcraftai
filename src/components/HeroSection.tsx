@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main headline - pure white for contrast */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6 animate-fade-up drop-shadow-lg" style={{ animationDelay: '0.1s' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-hero font-bold text-white leading-tight mb-6 animate-fade-up drop-shadow-lg" style={{ animationDelay: '0.1s' }}>
             Shaping the Future with
             <br />
             AI-Driven Intelligence
