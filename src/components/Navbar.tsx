@@ -18,11 +18,13 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-              <div className="w-4 h-4 bg-white/90 rounded-full" style={{ clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }} />
+          <a href="#" className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30">
+              <svg viewBox="0 0 24 24" className="w-4 h-4" fill="white">
+                <path d="M12 2C12 2 5 10 5 15C5 18.866 8.134 22 12 22C15.866 22 19 18.866 19 15C19 10 12 2 12 2Z" />
+              </svg>
             </div>
-            <span className="text-xl lg:text-2xl font-heading font-bold text-white">
+            <span className="text-xl lg:text-2xl font-hero font-semibold text-white tracking-tight">
               MindCraft AI
             </span>
           </a>
