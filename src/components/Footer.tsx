@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import mindcraftLogo from "@/assets/ChatGPT Image Mar 1, 2026, 09_11_17 PM.png";
 
 const Footer = () => {
   const whatsappNumber = "+254700000000";
@@ -11,11 +12,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shadow-lg">
-                <svg viewBox="0 0 24 24" className="w-4 h-4" fill="white">
-                  <path d="M12 2C12 2 5 10 5 15C5 18.866 8.134 22 12 22C15.866 22 19 18.866 19 15C19 10 12 2 12 2Z" />
-                </svg>
+            <a href="#" className="flex items-center gap-3 mb-4">
+              <div className="h-12 w-16 overflow-hidden rounded-md bg-black/70 ring-1 ring-primary/25 shadow-md shadow-primary/15">
+                <img
+                  src={mindcraftLogo}
+                  alt="MindCraft AI logo"
+                  className="h-full w-full scale-[1.3] object-contain"
+                />
               </div>
               <span className="text-xl font-bold text-foreground">
                 MindCraft AI
